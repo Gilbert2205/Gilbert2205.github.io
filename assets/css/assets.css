@@ -618,7 +618,9 @@
 	#display {
     display: none !important;
   }
-
+	.social{
+		display: none;
+	}
 	.display-none {
     display: none;
 	}
