@@ -777,6 +777,9 @@
 		        align-items: center;
 
 	}
+	.foot_index{
+		display: block;
+	}
 	.connect_mobi{
 		color: #F94D4D;
 		font-family: Helvetica,Arial,sans-serif;
