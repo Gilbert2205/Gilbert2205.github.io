@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/img/compressed/FAVICON.png" type="image/x-icon">
+	<title>Take the cake</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+</head>
+<body>
+	<div class="wrapper-page wrap-proj">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+						<a class="form_briff" href="brif" download>Скачать бриф</a>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position position-nav">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a class="logo__link" href="index.html"><img src="assets/img/compressed/Canape_logo.svg" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a  href="index.html"  class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+									<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav" onclick="ShowModal()">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social display-proj">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social__text">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div class="project-bg">
+			<img class="project__img" src="assets/img/compressed/takecake1.jpg">
+		</div>
+	</div>
+	<div class="project">
+		<div class="project__about">
+			<div class="about__done">
+				<div class="done__logo">
+					<img class="logo-pic" src="assets/img/compressed/takecakelogo.png">
+				</div>
+				<div class="done__text">
+					<p class="text__steps">
+						Было выполнено по проекту:</br>
+						<a href="#" class="steps__color colorOrigin">Концепция, брендинг, проект производства, меню</a>
+					</p>
+					<h2 class="project__title_concept concpt_ms"><span class="numbers">01</span>Концепция</h2>
+					<p class="text__steps_about">
+						<span class="space_concept">
+							Была разработана концепция, бизнес-план для кондитерских-магазинов, где каждый любитель сладкого мог бы найти десерт по душе, продегустировать его в кондитерской или забрать с собой. Было запущено производство тортов и десертов — главной гордости кондитерской.
+
+
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="about__contact about__contact_cake">
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Cобственное производство и сеть кондитерских магазинов </p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Харьков</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Реализован 2014 год</p>
+				</div>
+				<div class="dscr_prod_holder dscr_prod_holder_clear">
+					<span class="prod_line"></span>
+					<a target="_blank" href="http://takethecake.com.ua/" class="prod_ds_link">takethecake.com.ua</a>
+				</div>
+				<a href="#" onclick="Show()" class="inform__btn">Связаться с нами</a>
+			</div>
+		</div>
+		<div class="project__block">
+			<div class="block__slider_part">
+				<ul class="slider__list_proj">
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/takecake2.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/cake2.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/cake5.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/cake6.jpg">
+					</li>
+				</ul>
+				<div class="about__pag">
+					<ul class="pag__list">
+					</ul>
+				</div>
+				<p class="project__down"><span class='down__elem'>Вниз<span></p>
+			</div>
+			<div class="block__about_part">
+				<div class="about__creature">
+					<h4 class="creature__title"><span class="numbers">02</span>Брендинг</h4>
+					<h5 class="creature__subTitle">Нейминг</h5>
+					<p class="text__steps_about margin-creature">
+						Название «take the cake» дословно переводится как «возьми торт» и является призывом к действию, выбрать себе кондитерское изделие в магазине. Также «take the cake» — это идиома (устойчивое выражение), которая переводится как «быть исключительным; быть самым лучшим», таким образом название имеет двойное значение.
+					</p>
+					<h5 class="creature__subTitle">Логотип</h5>
+					<p class="text__steps_about margin-creature">
+						Для сети кондитерских магазинов «Take the cake» разработан современный рукописный, игривый логотип, который включает в себя название, написанное рукописным шрифтом, буквы плавные, с завитушками. Часть надписи «the» заключена в знак – рисованный кекс, олицетворяющий главный продукт – кондитерские изделия. Завершают композицию рассыпанные «крошки» от кекса, символизирующие специализацию заведения.
+
+					</p>
+					<h5 class="creature__subTitle">Фирменный стиль</h5>
+					<p class="text__steps_about margin-creature">
+						Цветовое решение фирменного стиля основано на мягких оттенках голубого и бежевого. Созданы элементы фирменного стиля: коробка для тортов, фирменный пакет, ценник для кондитерских изделий, бонусная карта, форма персонала, визитка, дизайн сайта.
+					</p>
+					<h5 class="creature__subTitle">Проект производства</h5>
+					<p class="text__steps_about">
+						Для сети кондитерских магазинов был запущен кондитерский цех, проект которого включал подбор и расстановку оборудования, согласно техническим процессам.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap">
+		<div class="menu__block">
+			<h4 class="block__head_title fourTitle threeTitle"><span class="numbers">03</span>Меню</h4>
+		</div>
+	</div>
+	<div class="slider-project">
+		<div class="slider__slick">
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/cakeslide1.jpg">
+			</div>
+  			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/cakeslnew.jpg">
+			</div>
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/cakeslide3.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap menu_proj_yap_ms">
+		<div class="menu__block">
+			<p class="text__steps_about margin-creature creature_ms">
+				«Take the cake» специализируется на приготовлении кондитерских изделий из натуральных продуктов по авторским рецептам с помощью современных технологий. Каждый торт, десерт и выпечку можно назвать шедевром кулинарного искусства. 
+
+
+			</p>
+			<p class="text__steps_about creature_ms">
+				Продукция «Take the cake» сможет удовлетворить запросы самых привередливых сладкоежек. Также у клиентов кондитерской есть возможность заказать десерт, который будет разработан профессиональными кондитерами для любого торжества и праздника.
+
+			</p>
+		</div>
+	</div>
+	<div class="video-block">
+		<div class="video-block__frame">
+			
+		</div>
+	</div>
+	<div class="menu__footer">
+		<div class="footer__btns">
+			<a href="roast.html" class="btns__prev">Посмотреть предыдущий проект</a>
+			<a href="eatery.html" class="btns__next">Посмотреть следующий проект</a>
+			<a onclick="Show()" class="btns__conn">Связаться с нами</a>
+		</div>
+		<div class="footer__fill"></div>
+	</div>
+	<div class="mob_ver_holder footerAll">
+		<div class="footer_mob">
+			<div class="input-ms">
+				<p class="sbscr_text">
+					Подпишитесь на нашу рассылку
+				</p>
+				<form method="post" class="subscribe-form">
+			      <input type="email" name="email" class="subscribe-input subscribe-input_mod" placeholder="Ваш Email" autofocus>
+			      <button type="submit" class="subscribe-submit subscribe-submit_mod"><span><!-- <img class="arr_fd" src="assets/img/compressed/next.svg" alt=""> -->
+			      		Подписаться
+			      </span></button>
+			      <!-- <button type="submit" class="subscribe-submit"><span><img class="arr_fd" src="assets/img/compressed/next.svg" alt=""></span></button> -->
+			    </form>
+			</div>
+			<div class="social_holder_mob">
+				<a class="connect_mobi" onclick="Show()">Связаться с нами</a>
+				<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social_mob">Facebook</a>
+				<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social_mob">Instagram</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<div class="btn_ms_hold">
+							
+							<a class="form_briff" href="brif" download>Скачать бриф</a>
+							<button class="form__btn_con">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Ресторанное агентство</p>
+		</div>
+		<div class="modal_more_links">
+		<div id="DropNav" class="ff_hold">
+				<p class="text_for_drop" >Показать услуги</p>
+				<div  class="drop_cont_ff drop_cont_ff_op">
+					<ul class="modal_more_links_ul modal_more_links_ul_ms">
+						<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+						<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+						<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+						<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+						<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+						<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+						<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal_more_links_ul">
+				<li class="more_link_spacer"><a class="more_link_mod" href="aboutus.html">О нас</a></li>
+				<li><a class="more_link_mod" href="contact.html">Контакты</a></li>
+			</ul>
+			<p class="header__dscr_more_s">Или</p>
+			<p class="header__dscr_more_l">Выберите проект:</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/ricco_modal.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='takecake.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Take the cake</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>

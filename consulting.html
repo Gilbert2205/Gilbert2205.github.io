@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/img/compressed/FAVICON.png" type="image/x-icon">
+	<title>Консалтинг</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+</head>
+<body>
+	<div class="wrapper-page">
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a class="logo__link" href="index.html"  onclick='Ajax(0, false)'><img src="assets/img/compressed/Canape_logo.svg" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a  class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+									<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav" onclick="ShowModal()">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social__text">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/consultingBg.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+				</div>
+				<div class="main__sidebar">
+					<div class="flex-cover">
+						<div class="sidebar__nav">
+							<ul class="nav__pages">
+								<li class="pages__link"><a href="own.html" class="link__menu ">Ресторан под ключ</a></li>
+								<li class="pages__link"><a href="concept.html" class="link__menu ">Концепция</a></li>
+								<li class="pages__link"><a href="brand.html" class="link__menu ">Брендинг</a></li>
+								<li class="pages__link"><a href="design.html" class="link__menu">Проект</a></li>
+								<li class="pages__link active-text"><a href="menu.html" class="link__menu">Меню</a></li>
+								<li class="pages__link "><a href="control.html" class="link__menu ">Управление</a></li>
+								<li class="pages__link "><a href="consulting.html" class="link__menu active-text">Консалтинг</a></li>
+							</ul>
+						</div>
+						<div class="sidebar__pagination">
+							<div class="pagination__items">
+								<ul class="items__lines">
+									<li class="lines__item active-item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+								</ul>
+							</div>
+							<div class="pagination__help">
+								<a href="#section" class="help__word">Вниз</a>
+							</div>
+						</div>
+					</div>
+					<div class="main__page_name">
+						<h2 class="page__canape">Консалтинг</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section" class="wrap-brand">
+		<div class="brand__about design-align design-align_mod">
+			<div class="about__dscr own__dsrc">
+				<div class="cover_dscr cover_dscr_own">
+					<h2 class="dscr__title_page dscr__title_page_mod">Консалтинг</h2>
+					<p class="block__some_word block__some_word_mod">
+						Есть вопросы, но нет ответов? 
+					</p>
+					<p class="block__some_word block__some_word_mod">
+						Ресторанный консалтинг – комплекс услуг, направленных на повышение эффективности ресторана (под рестораном понимаем любую форму заведения общепита). Звучит просто и понятно, однако даже опытные рестораторы не до конца осознают важность таких мероприятий. Любимый формат организации для отечественных ресторанов – «сделай сам». Это смело, но не всегда оправданно.
+					</p>
+					<p class="block__some_word block__some_word_mod">
+						Поэтому если вы решили обратиться за помощью к специалисту по ресторанному консалтингу, вы, как минимум, мыслите нестандартно.  И понимаете, что  организация ресторана – это целая жизнь, такая же насыщенная, разнообразная и не всегда хорошо изученная, как, например, подводный мир. В нем есть свои акулы и их жертвы, которыми не хотелось бы стать. И даже если вы знающий дело «дайвер», то вряд ли специалист такого уровня, как Жак-Ив Кусто (а если да, то просто приходите работать к нам!)
+	
+					</p>
+				</div>
+			</div>
+			<div class="about__img about_img_own">
+				<span class="img__line color_d"></span>
+				<img class="img__same_blog" src="assets/img/compressed/consulting2.jpg">
+			</div>
+		</div>
+		<div class="own_wrap">
+			<div class="own_dscr_block">
+				<div class="own_dscr_img_holder">
+					<img class="own_img" src="assets/img/compressed/con3.jpg" alt="">
+				</div>
+				<div class="own_dscr_text">
+					<h3 class="text__title_process text__title_process_mod">В каких случаях вам может понадобиться ресторанный консалтинг?</h3>
+					<p class="block__some_word block_own">
+						В первую очередь, заведениям, которые находятся в состоянии стагнации. Кривая от застоя к спаду: падение прибыли, пустые столики, одинокие посетители и т.д. красноречиво указывают на необходимость перемен. Какого рода должны быть перемены – вопрос, который не всегда под силу решить самостоятельно. 
+
+					</p>
+					<p class="block__some_word block_own">
+						Отсутствие развития, замедление положительной динамики тоже сигнал и веская причина привлечь «скорую помощь» в виде специалиста по ресторанному консалтингу. Причем, это может быть как развернутая диагностика с «методами лечения» проблемы, так и конкретный ответ на конкретный вопрос.
+
+					</p>
+					<p class="block__some_word block_own">
+						Наконец, выход на рынок – важнейший для ресторана этап – может стать  поводом для обращения к консультанту, поскольку начинающие рестораторы еще не изучили все подводные течения этого бизнеса, организационная структура и эффективная стратегия развития не налажены.
+
+					</p>
+				</div>
+			</div>
+			<div class="own_more">
+				<div class="own_dscr_text own_dscr_text_more_ms">
+					<p class="block__some_word block_own">
+						Нам под силу решение любой проблемы, будь то вопросы правильного оформления разрешительных документов, корректировка бизнес-плана ресторана, технический проект, правила подбора персонала или расстановка мебели. Почему? Потому что мы  – профессионалы. Вы скажете: «Так отрекомендуется любое консалтинговое агентство». И будете правы. Что выделяет именно нас? В чем состоит уникальное предложение Canape?
+
+
+					</p>
+					<p class="block__some_word block_own">
+						Мы не только теоретики но и практики. У нас есть преданные клиенты и успешно реализованные проекты. Мы проводим глубокий анализ ваших проблем, уделяя внимание каждой детали. Но не это главное. Главное – не смотря на многолетний опыт и множество созданных проектов, мы все еще «горим» каждым своим проектом, решаем каждую задачу, как загадку века. Мы – маньяки своей профессии, и если вы любите ресторанное дело так же, нам по пути.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="brand__blog">
+			
+			
+			
+			<div class="another">
+				<h4 class="another__title">
+					Другие наши услуги
+				</h4>
+			</div>
+		</div>
+		<footer class="flex-nav">
+			<ul class="nav__footer">
+				<li class="footer__item"><a class="item__link_footer" href="own.html">Ресторан «под ключ»</a></li>
+				<li class="footer__item"><a class="item__link_footer " href="concept.html">Концепция</a></li>
+				<li class="footer__item"><a class="item__link_footer " href="brand.html">Брендинг</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="design.html">Проект</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="menu.html">Меню</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="control.html">Управление</a></li>
+				<li class="footer__item"><a class="item__link_footer after-foot" href="consulting.html">Консалтинг</a></li>
+			</ul>
+		</footer>
+	</div>
+	<div class="mob_ver_holder footerAll">
+		<div class="footer_mob">
+			<div class="input-ms">
+				<p class="sbscr_text">
+					Подпишитесь на нашу рассылку
+				</p>
+				<form method="post" class="subscribe-form">
+			      <input type="email" name="email" class="subscribe-input subscribe-input_mod" placeholder="Ваш Email" autofocus>
+			      <button type="submit" class="subscribe-submit subscribe-submit_mod"><span><!-- <img class="arr_fd" src="assets/img/compressed/next.svg" alt=""> -->
+			      		Подписаться
+			      </span></button>
+			      <!-- <button type="submit" class="subscribe-submit"><span><img class="arr_fd" src="assets/img/compressed/next.svg" alt=""></span></button> -->
+			    </form>
+			</div>
+			<div class="social_holder_mob">
+				<a class="connect_mobi" onclick="Show()">Связаться с нами</a>
+				<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social_mob">Facebook</a>
+				<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social_mob">Instagram</a>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<div class="btn_ms_hold">
+							
+							<a class="form_briff" href="brif" download>Скачать бриф</a>
+							<button class="form__btn_con">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Ресторанное агентство</p>
+		</div>
+		<div class="modal_more_links">
+			<div id="DropNav" class="ff_hold">
+				<p class="text_for_drop" >Показать услуги</p>
+				<div  class="drop_cont_ff drop_cont_ff_op">
+					<ul class="modal_more_links_ul modal_more_links_ul_ms">
+						<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+						<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+						<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+						<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+						<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+						<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+						<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal_more_links_ul">
+				<li class="more_link_spacer"><a class="more_link_mod" href="aboutus.html">О нас</a></li>
+				<li><a class="more_link_mod" href="contact.html">Контакты</a></li>
+			</ul>
+			<p class="header__dscr_more_s">Или</p>
+			<p class="header__dscr_more_l">Выберите проект:</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/ricco_modal.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='takecake.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Take the cake</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>

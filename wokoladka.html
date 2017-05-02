@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/img/compressed/FAVICON.png" type="image/x-icon">
+	<title>Шоколадка</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+</head>
+<body>
+	<div class="wrapper-page wrap-proj">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+						<a class="form_briff" href="brif" download>Скачать бриф</a>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position position-nav">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a class="logo__link" href="index.html"><img src="assets/img/compressed/Canape_logo.svg" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="index.html"  class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+									<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav" onclick="ShowModal()">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social display-proj">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social__text">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div class="project-bg">
+			<img class="project__img" src="assets/img/compressed/wok1.jpg">
+		</div>
+	</div>
+	<div class="project">
+		<div class="project__about">
+			<div class="about__done">
+				<div class="done__logo">
+					<img class="logo-pic" src="assets/img/compressed/woklogo.png">
+				</div>
+				<div class="done__text">
+					<p class="text__steps">
+						Было выполнено по проекту:</br>
+						<a href="#" class="steps__color colorOrigin">Ресторан под ключ</a>
+					</p>
+					<h2 class="project__title_concept concpt_ms"><span class="numbers">01</span>Концепция</h2>
+					<p class="text__steps_about">
+						<span class="space_concept">
+							Проект кофейни «Шоколадка» разрабатывался, как приятное и тихое место для отдыха, деловых встреч и романтических свиданий. Колористика интерьера выполнена в тёплых тонах с использованием жёлтого, коричневого и белого цветов. Для пола выбрано плиточное покрытие шоколадного оттенка. Мягкие белые диваны и комфортные коричневые кресла в сочетании с массивными деревянными столами, шкафами и широкой столешницей, создают атмосферу уюта и безмятежности. Особого внимания заслуживает освещение. Большое количество источников света, с мягкими рассеянными лучами, дополняют общую картину, создавая лёгкие черты тёплого интерьера. Концептуальное решение организации помещения позволяет сочетать в себе функции: кофейни, кондитерской и ресторана.
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="about__contact">
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Cеть кофеен </p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Харьков</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Реализовано 3 кофейни, 2010-2013 года</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">85-183 м2</p>
+				</div>
+				<div class="dscr_prod_holder dscr_prod_holder_clear">
+					<span class="prod_line"></span>
+					<a target="_blank" href="http://www.shokoladka.ua/" class="prod_ds_link">shokoladka.ua</a>
+				</div>
+				<a href="#" onclick="Show()" class="inform__btn">Связаться с нами</a>
+			</div>
+		</div>
+		<div class="project__block">
+			<div class="block__slider_part">
+				<ul class="slider__list_proj">
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/wok3.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/woksl2.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/woksl3.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/woksl4.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/woksl5.jpg">
+					</li>
+				</ul>
+				<div class="about__pag">
+					<ul class="pag__list">
+					</ul>
+				</div>
+				<p class="project__down"><span class='down__elem'>Вниз<span></p>
+			</div>
+			<div class="block__about_part">
+				<div class="about__creature">
+					<h4 class="creature__title"><span class="numbers">02</span>Брендинг</h4>
+					<h5 class="creature__subTitle">Нейминг</h5>
+					<p class="text__steps_about margin-creature">
+						Название кофейни олицетворяет главный продукт — фишку заведения — бельгийский шоколад. Ассоциируется с мягким, нежным и сладким десертом и приятным времяпровождением.
+					</p>
+					<h5 class="creature__subTitle">Логотип</h5>
+					<p class="text__steps_about margin-creature">
+						Логотип шрифтовой со знаком. Надпись «шоколадка» представляет собой шрифтовую композицию, где буквы «о» выполнены в виде стилизованных спиралей и напоминают кофе с молоком, если смотреть на чашку сверху. Знак представляет собой спираль, заключенную в квадрат и так же, как буквы «о» имеет прямую ассоциацию с кофейной чашкой, для большей схожести добавлены элементы, которые символизируют пар (аромат), исходящий от напитка. 
+					</p>
+					<h5 class="creature__subTitle">Фирменный стиль</h5>
+					<p class="text__steps_about">
+						Четыре фирменных цвета кофейни составляют стилеобразующий элемент — коричневый фон с полосами разных оттенков. Фирменные цвета вызывают прямую ассоциацию с основными продуктами заведения — кофе и шоколадом. Разработаны такие элементы фирменного стиля: фирменная упаковка для кондитерских изделий, меню с разделами, буклеты, бонусные карты и карты персонала, фирменный бланк, пластиковый пакет, салфетки, спички, пакетированный сахар, ценник, рекламная визитка, визитка-приглашение, наклейка, бланк сезонных и акционных предложений, шаблон детского меню.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="project__box_page">
+			<div class="box__interior">
+				<h3 class="interior__title">
+					<span class="numbers">03</span>
+					Архитектурный</br> 
+					проект
+				</h3>
+				<p class="interior__text">Кофейня </p>
+				<ul class="interior__list">
+				</ul>
+			</div>
+			<div class="box__pic three_ms_n">
+				<div id="mfpWrap" class="pic__inter">
+					<a class="inter__img" href="assets/img/shokoladka/photo_1_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_1.jpg">
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_2_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_2.jpg">
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_3_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_3.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_4_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_4.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_5_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_5.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_6_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_6.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/shokoladka/photo_7_big.jpg" >
+						<img class="img__dev" src="assets/img/shokoladka/photo_7.jpg" >
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="project__main_img align_flexCreat">
+			<div class="main__img_proj img_bigItem">
+				<img class="img__about" src="assets/img/compressed/wok5.jpg">
+			</div>
+			<p class="text_creature">
+				Шоколадка - это классическая кофейня. Её стилистическое наполнение выполнено и продуманно в едином направлении с дополняющими элементами ар-деко. 
+
+				</br>
+				</br>
+				В ТРЦ Магеллан расположен самый яркий представитель этого стиля.  Уникальный интерьер, декорированный эксклюзивными элементами в виде обоев на холсте с необычным рисунком, специально разработанным художницей Татьяной Михайлушкиной для проекта «Шоколадка». В основе рисунка архитектурные элементы и картины эпохи ар-деко. 
+
+				</br>
+				</br>
+				Для объединения пространства и оформления интерьера в одном стилистическом мотиве подобрана ретро-упаковка: конфет, печенья и шоколада.
+			</p>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap">
+		<div class="menu__block">
+			<h4 class="block__head_title fourTitle"><span class="numbers">04</span>Меню</h4>
+			
+		</div>
+	</div>
+	<div class="slider-project">
+		<div class="slider__slick">
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/wokslide1.jpg">
+			</div>
+  			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/wokslide2.jpg">
+			</div>
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/wokslide3.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap menu_proj_yap_ms">
+		<div class="menu__block">
+			<p class="text__steps_about margin-creature creature_ms">
+				«Шоколадка» предлагает своим гостям окунутся в мир сладкого шоколадного удовольствия.  25 видов настоящего бельгийского шоколада, 80 наименований кофейных напитков, необычные десерты и конфеты ручной работы. А также шоколадные сувениры, которые порадуют не только посетителей кофейни, но и их близких. Помимо этого, в «Шоколадке» представлены изысканные блюда европейской кухни и множество вкусных коктейлей.
+
+			</p>
+		</div>
+	</div>
+	<div class="video-block">
+		<div class="video-block__frame">
+			<p class="video-block__dscr">
+				На самом деле услуга <a href="own.html">ресторан под ключ</a> охватывает более широкий спектр этапов работы над заведением, которые мы оказываем, и включает в себя: регистрацию компании и поиск помещения, поиск подрядчиков, субподрядчиков и смежников, подбор и обучение персонала, маркетинг, получение необходимых «разрешительных» документов, а также закрытие прочих вопросов связанных с запуском ресторана непосредственно сам Startup и поддержку Заказчика в течение 1-го месяца, после запуска ресторана.
+			</p>
+		</div>
+	</div>
+	<div class="menu__footer">
+		<div class="footer__btns">
+			<a href="yaposhka.html" class="btns__prev">Посмотреть предыдущий проект</a>
+			<a href="sweeter.html" class="btns__next">Посмотреть следующий проект</a>
+			<a onclick="Show()" class="btns__conn">Связаться с нами</a>
+		</div>
+		<div class="footer__fill"></div>
+	</div>
+	<div class="mob_ver_holder footerAll">
+		<div class="footer_mob">
+			<div class="input-ms">
+				<p class="sbscr_text">
+					Подпишитесь на нашу рассылку
+				</p>
+				<form method="post" class="subscribe-form">
+			      <input type="email" name="email" class="subscribe-input subscribe-input_mod" placeholder="Ваш Email" autofocus>
+			      <button type="submit" class="subscribe-submit subscribe-submit_mod"><span><!-- <img class="arr_fd" src="assets/img/compressed/next.svg" alt=""> -->
+			      		Подписаться
+			      </span></button>
+			      <!-- <button type="submit" class="subscribe-submit"><span><img class="arr_fd" src="assets/img/compressed/next.svg" alt=""></span></button> -->
+			    </form>
+			</div>
+			<div class="social_holder_mob">
+				<a class="connect_mobi" onclick="Show()">Связаться с нами</a>
+				<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social_mob">Facebook</a>
+				<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social_mob">Instagram</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<div class="btn_ms_hold">
+							
+							<a class="form_briff" href="brif" download>Скачать бриф</a>
+							<button class="form__btn_con">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Ресторанное агентство</p>
+		</div>
+		<div class="modal_more_links">
+		<div id="DropNav" class="ff_hold">
+				<p class="text_for_drop" >Показать услуги</p>
+				<div  class="drop_cont_ff drop_cont_ff_op">
+					<ul class="modal_more_links_ul modal_more_links_ul_ms">
+						<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+						<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+						<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+						<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+						<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+						<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+						<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal_more_links_ul">
+				<li class="more_link_spacer"><a class="more_link_mod" href="aboutus.html">О нас</a></li>
+				<li><a class="more_link_mod" href="contact.html">Контакты</a></li>
+			</ul>
+			<p class="header__dscr_more_s">Или</p>
+			<p class="header__dscr_more_l">Выберите проект:</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/ricco_modal.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='takecake.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Take the cake</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="assets/css/mfp.css">
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<script type="text/javascript" src="assets/js/mfp.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>
