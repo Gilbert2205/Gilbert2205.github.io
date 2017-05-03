@@ -1494,6 +1494,7 @@
 .modal_more_links{
 	display: none;
 }
+
 @media only screen and (max-width : 1500px) {
 	.about_info_upd{
 		padding: 0px 100px;
@@ -1509,6 +1510,17 @@
 @media only screen and (max-width : 1080px) {
 	.about_upd_holder{
 		width: 100%;
+	}
+}
+@media only screen and (max-width : 900px) {
+	.wr_new{
+		overflow: visible;
+	}
+	.about_info_upd{
+		margin-top: -120px;
+	}
+	.wrap_brand_about_ms{
+		margin-top: -265px;
 	}
 }
 @media only screen and (max-width : 720px) {
@@ -1546,6 +1558,9 @@
 	    color: white;
 	    font-weight: bold;
 	    letter-spacing: 1.2px;
+	}
+	.title_about_upd{
+		font-size: 70px;
 	}
 }
 @media only screen and (max-width : 500px) {
@@ -1823,7 +1838,11 @@
 
 }
 
-
+@media screen and (max-width: 900px){
+	.wrap_brand_about_ms{
+		margin-top: -145px;
+	}
+}
 @media screen and (max-width: 800px){
 	.space_concept, .text__steps_about, .text_creature{
 		text-align: left;
@@ -1836,6 +1855,28 @@
 	}
 	.pro__line{
 		display: none;
+	}
+
+}
+@media screen and (max-width: 740px){
+	.wrap_brand_about_ms{
+		margin-top: -295px;
+	}
+	.about_last_item {
+    	margin-left: -20px;
+	}
+}
+@media screen and (max-width: 500px){
+	.wrap_brand_about_ms{
+		margin-top: -155px;
+	}
+}
+@media screen and (max-width: 390px){
+	.wrap_brand_about_ms{
+		margin-top: -155px;
+	}
+	.title_about_upd{
+		font-size: 60px;
 	}
 }
 
@@ -2041,6 +2082,7 @@
 	}
 
 }
+
 .logo__link img{
 	width: 107px;
 }
@@ -2152,8 +2194,13 @@
     display: inherit;
 }
 */
-
-
+.blog__flex {
+    margin-bottom: 70px;
+    padding: 0px 50px;
+}
+.menu__seo{
+	padding: 0px 50px;
+}
 
 
 
