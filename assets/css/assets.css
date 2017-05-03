@@ -796,6 +796,21 @@
 	.star_mob{
 		margin-right: 10px;
 	}
+	.about_last_item{
+		margin-left: -240px;
+	}
+	.daria{
+		margin-top: 360px;
+	}
+	.project{
+		padding: 0px 30px;
+	}
+	.project__main_img{
+		margin-bottom: 100px;
+	}
+	.numbers{
+		top: -29%;
+	}
 }
 .dscr_prod_holder{
 	display: -webkit-box;
