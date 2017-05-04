@@ -96,7 +96,8 @@ function Drop() {
 }
 
 Drop.prototype.helper = function(){
-    this.drop.hover(this.move.bind(this)); 
+    this.drop.hover(this.move.bind(this));
+    this.drop.click(this.move.bind(this)); 
 }
 
 Drop.prototype.move = function(){
