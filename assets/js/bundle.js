@@ -105,8 +105,9 @@ Drop.prototype.move = function(){
     this.down.css('display', 'flex');
     this.drop.addClass("arr");
     this.nav.hover(this.control.bind(this));
-    
 }
+
+
 
 Drop.prototype.control = function(){
     this.drop.removeClass("arr")

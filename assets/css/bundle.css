@@ -3927,7 +3927,15 @@ a {
     text-align: center;
   }
 }
+@media screen and (max-width: 800px) {
+  .head__nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+  }
 
+}
 
 @media screen and (max-width: 720px) {
   .video-block__item {
@@ -3947,13 +3955,7 @@ a {
     height: 70px;
   }
 
-  .head__nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
+  
   .nav__list {
     display: none;
   }
