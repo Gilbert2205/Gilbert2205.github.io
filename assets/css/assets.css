@@ -1867,6 +1867,9 @@
 	.wrap_brand_about_ms{
 		margin-top: -484px;
 	}
+	.nav__list{
+		display: none;
+	}
 }
 @media screen and (max-width: 740px){
 	.wrap_brand_about_ms{
