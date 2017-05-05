@@ -3264,7 +3264,7 @@ a {
 }
 
 .footerAll {
-  display: none !important;;
+  display: none;
 }
 
 .no-margin {
@@ -3937,13 +3937,22 @@ a {
 
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1024px){
+  .foot_new{
+    display: block;
+  }
+  .subscribe-form{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 769px) {
   .video-block__item {
     height: 380px;
   }
 
   .footerAll {
-    display: block !important;
+    display: block;
   }
 
   .content {
