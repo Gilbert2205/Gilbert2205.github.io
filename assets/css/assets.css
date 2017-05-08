@@ -2007,6 +2007,12 @@
 .modal_more_links_ul_ms li{
 	margin-bottom: 20px;
 }
+@media screen and (max-width: 1025px){
+	.subscribe-form{
+		justify-content: space-between;
+	}
+
+}
 
 /*.header__dscr_more_s{
 	    border-bottom: 1px solid rgba(255,255,255, .5);
