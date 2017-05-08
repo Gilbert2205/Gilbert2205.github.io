@@ -3947,6 +3947,12 @@ a {
 }
 
 @media screen and (max-width: 769px) {
+  .info__title:after{
+    display: none;
+  }
+  .info__dscr{
+    margin-bottom: 30px;
+  }
   .video-block__item {
     height: 380px;
   }
