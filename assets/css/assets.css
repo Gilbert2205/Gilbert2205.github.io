@@ -222,6 +222,7 @@
 	background-image: url(../img/compressed/hover4.jpg);
 }
 .member_lead{
+    display: none;
 	margin-bottom: 200px;
 }
 .member_mari{
@@ -497,6 +498,9 @@
 		margin-right: 40px;
 		margin-bottom: 50px;
 	}
+    .member_mob_holder:first-child {
+        display: none;
+    }
 	.member_img_mob img{
 		width: 100%;
 		height: auto;
@@ -809,7 +813,7 @@
 		margin-bottom: 100px;
 	}
 	.numbers{
-		top: -29%;
+/*		top: -29%;*/
 	}
 }
 .dscr_prod_holder{
@@ -1768,6 +1772,16 @@
     padding-left: 117px;
 }
 @media screen and (max-width: 1050px){
+    .about__done {
+        max-width: none;
+    }
+    .done__logo {
+        margin: 0 auto 60px;
+        width: 500px;
+    }
+    .about__contact {
+        width: 100%;
+    }
 	.video-block{
 		padding: 10px;
 	}
@@ -1811,6 +1825,9 @@
 
 
 @media screen and (max-width: 750px){
+    .done__logo {
+        width: 100%;
+    }
 	.slider__slick {
 	    max-width: 111%;
 	}
@@ -2160,19 +2177,23 @@
 
 
 @media only screen and (max-width: 1450px){
+/*
 	.interior__title{
-		font-size: 43px;
+		font-size: 32px;
 	}
+*/
 	.interior__title:after{
-		width: 200px;
+		width: 100px;
 	}
 }
 
 @media only screen and (max-width: 1200px){
 
+/*
 	.interior__title:after{
 		width: 100px;
 	}
+*/
 }
 
 .gray-text-contact{
