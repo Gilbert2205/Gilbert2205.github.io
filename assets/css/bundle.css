@@ -3935,7 +3935,11 @@ a {
     -ms-flex-align: center;
     align-items: center;
   }
-
+  .name__block{
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+      
 }
 
 @media screen and (max-width: 1024px){
