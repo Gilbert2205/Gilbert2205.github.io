@@ -438,6 +438,11 @@ a {
   overflow: hidden;
 }
 
+.social {
+    position: absolute;
+    bottom: 0;
+}
+
 .social__connect {
   display: -ms-flexbox;
   display: flex;
@@ -446,7 +451,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  top: 206px;
+  bottom: 0;
   left: 0px;
   width: 95px;
   height: 470px;
@@ -3935,11 +3940,7 @@ a {
     -ms-flex-align: center;
     align-items: center;
   }
-  .name__block{
-    margin-top: 0px;
-    margin-left: 30px;
-  }
-      
+
 }
 
 @media screen and (max-width: 1024px){

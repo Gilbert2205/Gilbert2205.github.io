@@ -166,6 +166,7 @@
 .brand_about{
 	margin: 0 auto;
     max-width: 100%;
+    margin-top: -200px;
 }
 .block_about{
 	position: absolute;
@@ -222,7 +223,7 @@
 	background-image: url(../img/compressed/hover4.jpg);
 }
 .member_lead{
-    display: none;
+    opacity: 0;
 	margin-bottom: 200px;
 }
 .member_mari{
@@ -462,6 +463,12 @@
 	.pagination_about{
 		display: none;	
 	}
+    .member__daria {
+        margin-top: 360px;
+    }
+    .member__adrew {
+        margin-top: 210px;
+    }
 }
 .blog__title_des{
 	-webkit-box-pack: end;
@@ -471,6 +478,9 @@
     margin-right: 133px;
 }
 @media only screen and (max-width : 985px) {
+    .brand_about {
+        margin-top: 0;
+    }
 	.team_column{
 		display: none;
 	}

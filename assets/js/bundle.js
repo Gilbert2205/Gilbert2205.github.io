@@ -96,21 +96,38 @@ function Drop() {
 }
 
 Drop.prototype.helper = function(){
-    this.drop.hover(this.move.bind(this));
-    this.drop.click(this.move.bind(this)); 
+    this.state = true;
+    this.drop.click(function() {
+        this.state = false;
+        this.move();
+    }.bind(this)); 
+    
+    this.drop.hover(function() {
+        setTimeout(function() {
+            if(this.state) {
+                if(this.drop.is(':hover')) {
+                    console.log('hi')
+                    this.move();
+                }     
+            }
+        }.bind(this), 100)  
+        
+    }.bind(this));
+    
 }
 
 Drop.prototype.move = function(){
     this.down.fadeIn();
     this.down.css('display', 'flex');
-    this.drop.addClass("arr");
+//    this.drop.addClass("arr");
     this.nav.hover(this.control.bind(this));
 }
 
 
 
 Drop.prototype.control = function(){
-    this.drop.removeClass("arr")
+    this.state = true;
+//    this.drop.removeClass("arr")
     this.down.fadeOut(); 
 }
 
