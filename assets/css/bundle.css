@@ -451,7 +451,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  bottom: 0;
+  bottom: -24px;
   left: 0px;
   width: 95px;
   height: 470px;
@@ -4302,4 +4302,16 @@ a {
     padding-left: 8px;
     padding-right: 8px;
   }
+}
+@media screen and (max-width: 1093px) {
+    .style__right{
+          padding: 0px 50px;
+    }
+    .cover_dscr{
+      padding: 0px 50px;
+    }
+    .name__block{
+      margin-top: 30px;
+      padding: 0px 50px;
+    }
 }
