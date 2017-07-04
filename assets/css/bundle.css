@@ -3232,7 +3232,7 @@ a {
   max-height: auto;
   background-color: white;
   z-index: 11;
-  overflow: hidden;
+  //overflow: hidden;
   transition: top 0.5s linear;
   border-bottom: 1px solid rgba(241, 241, 241, 0.5);
 }
@@ -3242,7 +3242,7 @@ a {
 }
 
 .fixed-dropdown {
-  position: fixed;
+  position: absolute;
   left: 0px;
   top: 100px;
   bottom: auto;
