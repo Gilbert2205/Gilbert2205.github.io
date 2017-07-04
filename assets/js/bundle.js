@@ -15,7 +15,7 @@ Modal.prototype.showModal = function () {
     setTimeout(function () {
         that.hide.css("display", "block");
     }, 500);
-
+    
     $('.show_hide').css('display', 'none');
     $('.hide_show').css('display', 'flex');
     this.modal.fadeIn();
@@ -32,20 +32,20 @@ Modal.prototype.showModal = function () {
 Modal.prototype.animate = function (count) {
     var i = count,
         that = this;
-    setTimeout(function() {
-        $('.content__img')[i].style.opacity = 1;
-        $('.content__img')[i].style.transform = 'scale(1, 1)';
-        if (i != 5) {
-            i++;
-            that.animate(i);
-        } else {
-            $('.modal__more').css('width', '60%');
+    setTimeout(function() { 
+        $('.content__img')[i].style.opacity = 1; 
+        $('.content__img')[i].style.transform = 'scale(1, 1)'; 
+        if (i != 5) { 
+            i++; 
+            that.animate(i); 
+        } else { 
+            $('.modal__more').css('width', '60%'); 
             $('.modal__more').css('opacity', '1');
-            setTimeout(function() {
+            setTimeout(function() { 
                 $('.more__text').css('opacity', '1');
-            }, 500)
-        }
-    }, 200)
+            }, 500) 
+        } 
+    }, 200) 
 }
 
 Modal.prototype.hideModal = function () {
@@ -53,7 +53,7 @@ Modal.prototype.hideModal = function () {
     setTimeout(function () {
         that.show.css("display", "block");
     }, 500)
-
+    
     this.hide.css("display", "none");
     $('html').css("overflow", "visible");
     $('.project__cross').css('transform', 'rotate(0deg)')
@@ -64,10 +64,10 @@ Modal.prototype.hideModal = function () {
         $('.project__box').css('transform', 'scale(1, 1)');
     },10);
     for (var i = 0; i < 6; i++) {
-        $('.content__img')[i].style.opacity = 0;
-        $('.content__img')[i].style.transform = 'scale(.7, .7)';
+        $('.content__img')[i].style.opacity = 0; 
+        $('.content__img')[i].style.transform = 'scale(.7, .7)'; 
     }
-    $('.modal__more').css('width', '0%');
+    $('.modal__more').css('width', '0%'); 
     $('.modal__more').css('opacity', '0');
     $('.more__text').css('opacity', '0');
     this.modal.fadeOut();
@@ -100,20 +100,20 @@ Drop.prototype.helper = function(){
     this.drop.click(function() {
         this.state = false;
         this.move();
-    }.bind(this));
-
+    }.bind(this)); 
+    
     this.drop.hover(function() {
         setTimeout(function() {
             if(this.state) {
                 if(this.drop.is(':hover')) {
                     console.log('hi')
                     this.move();
-                }
+                }     
             }
-        }.bind(this), 100)
-
+        }.bind(this), 100)  
+        
     }.bind(this));
-
+    
 }
 
 Drop.prototype.move = function(){
@@ -128,7 +128,7 @@ Drop.prototype.move = function(){
 Drop.prototype.control = function(){
     this.state = true;
 //    this.drop.removeClass("arr")
-    this.down.fadeOut();
+    this.down.fadeOut(); 
 }
 
 new Drop();
@@ -147,7 +147,7 @@ More.prototype.helper = function () {
 }
 
 More.prototype.showProj = function () {
-    this.show.css('display', 'none');
+    this.show.css('display', 'none'); 
     this.hide.css('display', 'block');
     $('.text__project').text('К основным');
     this.line.css('display', 'none');
@@ -158,7 +158,7 @@ More.prototype.showProj = function () {
 }
 
 More.prototype.hideProj = function () {
-    this.show.css('display', 'block');
+    this.show.css('display', 'block'); 
     this.hide.css('display', 'none');
     $('.text__project').text('Больше проектов');
     this.line.css('display', 'block');
@@ -289,7 +289,7 @@ function Fixed(header, drop) {
 }
 
 Fixed.prototype.helper = function() {
-    window.addEventListener('scroll', this.move.bind(this));
+    window.addEventListener('scroll', this.move.bind(this)); 
 };
 
 Fixed.prototype.move = function() {
@@ -340,13 +340,6 @@ function DropNav(dropNav){
         new DropNav($('#DropNav'));
 
 $(document).ready(function() {
-
-    var ua = navigator.userAgent,
-        event = (ua.match(/iPad/i)) ? "touchstart" : "click"; //Если имеем дело с iPad - touchstart, иначе - событие click;
-
-    $(".nav__list a").bind(event, function(e) {
-        // iPad fix click behavior on hovered links
-    });
 
     // Popup photo with class mfp-slider
     (function Mfp() {
