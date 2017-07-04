@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/img/compressed/FAVICON.png" type="image/x-icon">
+	<title>Брендинг</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="stylesheet" href="assets/css/assets.css">
+</head>
+<body>
+	<div class="wrapper-page">
+		<header class="position">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a class="logo__link" href="index.html"  onclick='Ajax(0, false)'><img src="assets/img/compressed/Canape_logo.svg" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+									<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav" onclick="ShowModal()">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social__text">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div id='wrap' class="wrap">
+			<div class="main">	
+				<div class="home_img">
+					<ul class="img_list">
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/b1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img1.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img2.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img3.jpg">
+						</li>
+						<li class="list-img">
+							<img class="home_background" src="assets/img/compressed/img4.jpg">
+						</li>
+					</ul>
+				</div>
+				<div class="main__sidebar">
+					<div class="flex-cover">
+						<div class="sidebar__nav">
+							<ul class="nav__pages">
+								<li class="pages__link"><a href="concept.html" class="link__menu">Ресторан под ключ</a></li>
+								<li class="pages__link"><a href="concept.html" class="link__menu">Концепция</a></li>
+								<li class="pages__link"><a href="brand.html" class="link__menu active-text">Брендинг</a></li>
+								<li class="pages__link"><a href="design.html" class="link__menu">Проект</a></li>
+								<li class="pages__link active-text"><a href="menu.html" class="link__menu">Меню</a></li>
+								<li class="pages__link"><a href="control.html" class="link__menu">Управление</a></li>
+								<li class="pages__link"><a href="control.html" class="link__menu">Консалтинг</a></li>
+							</ul>
+						</div>
+						<div class="sidebar__pagination">
+							<div class="pagination__items">
+								<ul class="items__lines">
+									<li class="lines__item active-item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+									<li class="lines__item"></li>
+								</ul>
+							</div>
+							<div class="pagination__help">
+								<a href="#section" class="help__word">Вниз</a>
+							</div>
+						</div>
+					</div>
+					<div class="main__page_name">
+						<h2 class="page__canape">Брендинг</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="section" class="wrap-brand">
+		<div class="brand__about align_itemsCenter">
+			<div class="about__dscr">
+				<div class="cover_dscr">
+					<h2 class="dscr__title_page">Брендинг</h2>
+					<p class="dscr__same_words">
+						"Самое важное понятие в маркетинге 	&mdash; понятие бренда. Если вы не бренд 	&mdash; вы не существуете. Кто же вы тогда? Вы 	&mdash; обычный товар." Ф. Котлер. 
+
+					</p>
+					<p class="dscr__same_words">
+						БРЕНДИНГ — это процесс создания уникальной узнаваемой торговой марки, которая позволит выгодно отличаться от конкурентов и повысить экономическую рентабельность бизнеса.  
+					</p>
+					<p class="dscr__same_words">
+						В процессе создания бреда создается не только название, символика и графическое изображение (логотип), но и дополнительные элементы позиционирования, концепции развития компании или ее продукта. Кратко, бренд понимается как товарный знак со сложившимся имиджем. 
+					</p>
+					<p class="dscr__same_words">
+						Брендинг включает в себя комбинацию мероприятий, направленных на создание бренда компании, развитие продвижение и поддержку. Являясь важным шагом позиционирования торговой марки и формирования аудитории будущего продукта (товара, услуги), создание сильного бренда и его концепции достигается посредством интеграции рекламных, PR, маркетинговых, бизнес и иных коммуникаций.   
+					</p>
+					<h4 class="dscr__same_title">Логотип</h4>
+					<p class="dscr__same_words">
+						Логотип — это главный визуальный компонент бренда компании. Именно с него начинается фирменный стиль. Он состоит из символа, иллюстрации и/или графического печатного оформления. Логотип выражает основное направление, особенности деятельности фирмы, ее отличие от других.
+ 
+					</p>
+					<p class="dscr__same_words">
+						Корпоративная айдентика является важной частью проекта, обеспечивая ресторану неповторимый визуальный стиль и характер.
+
+ 
+					</p>
+					<p class="dscr__same_words">
+						Работа начинается с анализа конкурентов и целевой аудитории, после чего составляется подробный психологический портрет потребителя и формируются основные требования к фирменному стилю. Следующий этап — поиск визуальной идеи проекта, его характера и графических средств, с помощью которых фирменный стиль будет отличать заведение от конкурентов. После утверждения визуальной концепции начинается разработка логотипа — основополагающего графического элемента. Логотип может быть шрифтовым, знаковым либо комбинированным, и его главная задача — идентифицировать заведение. Найдя оптимальный вариант логотипа, можно приступать к разработке фирменного стиля: подбору оптимальных шрифтов, составлению цветовой палитры, созданию фирменных элементов (паттернов, фактур, иллюстраций), и, в итоге, к дизайну носителей фирменного стиля.
+ 
+					</p>
+					<p class="dscr__same_words">
+						Подчиняясь разработанной концепции, логотип и фирменный стиль передают настроение заведения и подчеркивают его главные особенности.
+ 
+					</p>
+					<span class="dscr__same_count">01</span>
+				</div>
+			</div>
+			<div class="about__img flex-col">
+				<div class="img__block">
+					<span class="img__line color_a"></span>
+					<img class="img__same_blog" src="assets/img/compressed/b2.jpg">
+				</div>
+				<div class="name__block">
+					<h4 class="dscr__same_title">Нейминг</h4>
+					<p class="dscr__same_words">
+						Удачное название – первая победа на пути к реализации проекта заведения. С него начинается история и формируется первое впечатление, создается образ и возникают идейные представления о концепции. Сначала мы создаём ресторану имя, а после – имя создаёт узнаваемость ресторану. 
+					</p>
+					<p class="dscr__same_words">
+						Нейминг - часть маркетинговой стратегии ресторана, без неё невозможно позиционирование бренда. Это довольно серьёзный этап, требующий внимания и творческого подхода, ведь имя бренду присваивается на длительный период.
+					</p>
+					<p class="dscr__same_words">
+						Мы поможем создать для вашего заведения уникальное, запоминающееся название, обоснуем его значение, научим как его использовать и с чем сочетать.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="brand__style">
+			<div class="style__left">
+				<div class="left__top">
+					<div class="cover_text">
+						<h4 class="dscr__same_title">Фирменный стиль</h4>
+						<p class="dscr__same_words">
+							После проведения некоторого анализа рынка, складывается понимание о его игроках и местах которые они занимают. Затем определяют общую идею, которую мы называем концепция. Концепция - это руководящая идея, система взглядов, то есть основная точка зрения. 
+						</p>
+						<span class="dscr__same_count">03</span>
+					</div>				
+				</div>
+				<div class="left__bottom">
+					<img class="bottom__img" src="assets/img/compressed/b3.jpg">
+				</div>
+			</div>
+			<div class="style__right">
+				<div class="cover_counts">
+					<div class="cover_margin">
+						<h4 class="dscr__same_title">Слоган</h4>
+						<p class="dscr__same_words">
+							«Боевой клич» вашей идеи. Основа информационного послания заведения аудитории. Обычно, слоганы привлекают внимание тем, что указывают на потребности аудитории и предлагают их удовлетворить.  Главные достоинства качественного слогана – его запоминаемость и возникновение ряда ассоциаций, связанных с заведением. 
+
+						</p>
+						<span class="dscr__same_count">02</span>
+					</div>
+					<div class="cover_margin">
+						<h4 class="dscr__same_title">Ребрендинг</h4>
+						<p class="dscr__same_words">
+							Быстро меняющиеся вкусы аудитории стимулируют заведения рассматривать свой бренд и искать в нем устаревшие элементы. Если ресторан стремится соответствовать ожиданиям своих гостей, то он выбирает ребрендинг. 
+						</p>
+						<p class="dscr__same_words">
+							Это процедура трансформации бренда либо его составляющих. Основная задача – обновить систему ценностей, сделав её привлекательной и доступной для аудитории, тем самым увеличив число почитателей и изменив рыночный статус. Ребрендинг не уничтожает старый бренд полностью, а помогает ему эволюционировать, стать совершеннее. 
+						</p>
+						<p class="dscr__same_words">
+							Мы сформируем новую систему ценностей бренда вашего заведения, сделаем её актуальной и интересной, внеся свежие эмоции и идеи.  
+						</p>
+						<span class="dscr__same_count">04</span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="brand__blog">
+			<div class="blog__title">
+				<p class="title__dev">Нами разработаны бренды</p>
+			</div>
+			<div class="blog__flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name">Some Like it hot</h3>
+						<p class="left__name_dscr">
+							Опираясь на главную идею названия «некоторые любят погорячее», мы разработали фирменный знак, слоган и фирменный стиль заведения. Буква «t», как показатель температуры, была выбрана в качестве узнаваемого и современного фирменного знака «Some Like it hot». 
+						</p>
+						<a href="project.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right">
+					<img class="right__pic" src="assets/img/compressed/b4.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex">
+				<div class="flex__left rev-left">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">Ricco</h3>
+						<p class="left__name_dscr">
+							Агентство разработало новый фирменный стиль для службы доставки еды Харькова – Ricco.
+							 
+						</p>
+						<p class="left__name_dscr">
+							Главными элементами визуального языка стали лаконичные пиктограммы продуктов и блюд из меню. На их основе были разработаны знак и фирменный паттерн, который является главной графической составляющей практически всех элементов фирменного стиля. Использование ярких цветов дополняет образ современной пиццерии…
+						</p>
+						<a href="ricco.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right">
+					<img class="right__pic" src="assets/img/compressed/b5.jpg">
+				</div>
+			</div>
+			<div class="blog__flex start-flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name pos-after">Шоколадка</h3>
+						<p class="left__name_dscr">
+							Разработан логотип и фирменный стиль. Фирменные цвета вызывают прямую ассоциацию с основными продуктами заведения – кофе и шоколадом. Разработаны фирменная упаковка для кондитерских изделий, меню с разделами, буклеты, материалы полиграфии.  
+						</p>
+						<a href="wokoladka.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right size-pic">
+					<img class="right__pic" src="assets/img/compressed/b6.jpg">
+				</div>
+			</div>
+			<div class="blog__flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name size-after">Sweeter</h3>
+						<p class="left__name_dscr">
+							Sweeter – от англ. «подсластитель» имеет двойное значение: делает жизнь слаще и теплый, мягкий, вязанный свитер. Слоган выбран – «свяжись с кофе!».</br>
+							Логотип шрифтовой со знаком – название и формат, пиксельное изображение оленя. Основной цвет фирменного стиля – жизнерадостный оранжевый. Для многих элементов фирменного стиля используется пиксельная графика, разработан ряд фирменных пиксельных пиктограмм. Разработы элементы фирменного стиля: режим работы, визитки, бонусные карты, фирменная упаковка сахара, форма персонала.
+						</p>
+						<a href="sweeter.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right">
+					<img class="right__pic" src="assets/img/compressed/b7.jpg">
+				</div>
+			</div>
+			<div class="blog__flex rev-flex-sec last-blog">
+				<div class="flex__left rev-left-sec">
+					<div class="cover-part">
+						<h3 class="left__name rev-name">25 Coffee Roasters</h3>
+						<p class="left__name_dscr">
+							Число "25" - символ компании: 25 секунд длиться экстракция для получение идеального эспрессо, объёмом 25 миллилитров... Ориентируясь, на 3-ю кофейную волну и культуру потребления кофе в Украине, "25 Coffee Roasters" определили своё позиционирование: производство и поставки только качественного кофе свежей обжарки домой, в офисы, HoReCa, в период максимального насыщения вкусо-аромата. Фирменный стиль бренда привлекает настоящих ценителей кофе, которые делают выбор, опираясь на палитру цвето-вкусов
+						</p>
+						<a href="roast.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right rev-right">
+					<img class="right__pic" src="assets/img/compressed/b8.jpg">
+				</div>
+			</div>
+			<div class="blog__flex">
+				<div class="flex__left">
+					<div class="cover-part">
+						<h3 class="left__name size-after">Take the cake</h3>
+						<p class="left__name_dscr">
+							Для сети кондитерских магазинов «Take the cake» разработан современный рукописный, игривый логотип со знаком в виде кекса с крошками. Цветовое решение фирменного стиля основано на мягких оттенках голубого и бежевого.</br>Созданы элементы фирменного стиля: коробка для тортов, фирменный пакет, ценник для кондитерских изделий, бонусная карта, форма персонала, визитка, дизайн сайта. 
+
+						</p>
+						<a href="takecake.html" class="left__btn block__btn">Узнать больше о проекте</a>
+					</div>
+				</div>
+				<div class="flex__right">
+					<img class="right__pic" src="assets/img/compressed/b9.jpg">
+				</div>
+			</div>
+			<div class="another">
+				<h4 class="another__title">
+					Другие наши услуги
+				</h4>
+			</div>
+		</div>
+		<footer class="flex-nav">
+			<ul class="nav__footer">
+				<li class="footer__item"><a class="item__link_footer" href="own.html">Ресторан «под ключ»</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="concept.html">Концепция</a></li>
+				<li class="footer__item"><a class="item__link_footer after-foot" href="brand.html">Брендинг</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="design.html">Проект</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="menu.html">Меню</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="control.html">Управление</a></li>
+				<li class="footer__item"><a class="item__link_footer" href="consulting.html">Консалтинг</a></li>
+			</ul>
+		</footer>
+	</div>
+	<div class="mob_ver_holder footerAll">
+		<div class="footer_mob">
+			<div class="input-ms">
+				<p class="sbscr_text">
+					Подпишитесь на нашу рассылку
+				</p>
+				<form method="post" class="subscribe-form">
+			      <input type="email" name="email" class="subscribe-input subscribe-input_mod" placeholder="Ваш Email">
+			      <button type="submit" class="subscribe-submit subscribe-submit_mod"><span><!-- <img class="arr_fd" src="assets/img/compressed/next.svg" alt=""> -->
+			      		Подписаться
+			      </span></button>
+			      <!-- <button type="submit" class="subscribe-submit"><span><img class="arr_fd" src="assets/img/compressed/next.svg" alt=""></span></button> -->
+			    </form>
+			</div>
+			<div class="social_holder_mob">
+				<a class="connect_mobi" onclick="Show()">Связаться с нами</a>
+				<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social_mob">Facebook</a>
+				<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social_mob">Instagram</a>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<div class="btn_ms_hold">
+							
+							<a class="form_briff" href="brif" download>Скачать бриф</a>
+							<button class="form__btn_con">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Ресторанное агентство</p>
+		</div>
+		<div class="modal_more_links">
+			<div id="DropNav" class="ff_hold">
+				<p class="text_for_drop" >Показать услуги</p>
+				<div  class="drop_cont_ff drop_cont_ff_op">
+					<ul class="modal_more_links_ul modal_more_links_ul_ms">
+						<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+						<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+						<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+						<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+						<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+						<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+						<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal_more_links_ul">
+				<li class="more_link_spacer"><a class="more_link_mod" href="aboutus.html">О нас</a></li>
+				<li><a class="more_link_mod" href="contact.html">Контакты</a></li>
+			</ul>
+			<p class="header__dscr_more_s">Или</p>
+			<p class="header__dscr_more_l">Выберите проект:</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/ricco_modal.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='takecake.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Take the cake</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>

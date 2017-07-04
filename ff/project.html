@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="shortcut icon" href="assets/img/compressed/FAVICON.png" type="image/x-icon">
+	<title>Some Like it hot</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/css/bundle.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/assets.css">
+</head>
+<body>
+	<div class="wrapper-page wrap-proj">
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<button class="form__btn_con">Отправить</button>
+						<a class="form_briff" href="brif" download>Скачать бриф</a>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+		<header class="position position-nav">
+			<div class="content flex">
+				<div class="content__head">
+					<div class="head__logo">
+						<a class="logo__link" href="index.html"><img src="assets/img/compressed/Canape_logo.svg" class="link__logo_img"></a>
+					</div>
+					<div class="head__nav">
+						<ul class="nav__list">
+							<li class="list__item" id="list">
+								<a href="index.html"  class="item__page" id="drop">Наши услуги</a>
+								<ul class="item__dropdown" id="down">
+									<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+									<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+									<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+									<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+									<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+									<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+									<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+								</ul>
+							</li>
+							<li class="list__item"><a href="aboutus.html" class="item__page">О Нас</a></li>
+							<li class="list__item"><a href="contact.html" class="item__page">Контакты</a></li>
+						</ul>
+						<div class="mobile-nav" onclick="ShowModal()">
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+							<span class="mobile__line"></span>
+						</div>
+					</div>
+				</div>
+				<div class="content__show">
+					<div id="show"></div>
+					<div id="hide"></div>
+					<div class="show__project show_hide">
+						<p class="project__look">Посмотреть все проекты</p>
+						<div class="project__box">
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+							<div class="box__item"></div>
+						</div>
+					</div>
+					<div class="show__project hide_show">
+						<p class="project__look">Вернуться</p>
+						<div class="project__cross">
+							<span class="cross__line_first"></span>
+							<span class="cross__line_second"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="social display-proj">
+			<div class="social__connect">
+				<div class="connect__content">
+					<p class="content__contact" onclick="Show()">Связаться с нами</p>
+					<div class="content__social">
+						<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social__text">Facebook</a>
+						<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social__text">Instagram</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="display" class="line">
+			<div class="line__item">
+				<div id="line" class="item__rotate"></div>
+			</div>
+		</div>
+		<div class="project-bg">
+			<img class="project__img" src="assets/img/compressed/project1.jpg">
+		</div>
+	</div>
+	<div class="project">
+		<div class="project__about">
+			<div class="about__done">
+				<div class="done__logo">
+					<img class="logo-pic" src="assets/img/compressed/project-logo.png">
+				</div>
+				<div class="done__text">
+					<p class="text__steps">
+						Было выполнено по проекту:</br>
+						<a href="#" class="steps__color colorOrigin">Ресторан под ключ</a>
+					</p>
+					<h2 class="project__title_concept concpt_ms"><span class="numbers">01</span>Концепция</h2>
+					<p class="text__steps_about">
+						<span class="space_concept">
+							Очень интересным и необычным получился проект «Some like it hot», исполненный в формате coffee&bar. Интерьер объединяет комфорт, простоту и функциональность. За основу взяты белый и серый цвета, разбавленные теплыми и мягкими оттенками желтого и бирюзового. Гармоничное объединение кирпичных стен, бетонного пола, плитки, металлических проемов, деревянных столов и мягких диванов создают «суперконтраст» в интерьере. Помимо небольших столиков, разработан высокий длинный стол для большой компании, а также места на подоконниках около панорамных окон с видом на оживлённую городскую улицу. 
+						</span>
+						<span class="space_concept">
+							Барная стойка в основном зале контактная, совмещает в себе кондитерскую витрину, место кассира, и конечно же, сам бар. Также в зале предусмотрено место диджея. «Some like it hot» воплощает в себе уникальный симбиоз кофейни по утрам и бара вечером, удовлетворяя потребности самых разных гостей.
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="about__contact">
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Сoffee & Bar</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Харьков, Сумская 71 </p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">149 м2 и летняя терраса</p>
+				</div>
+				<div class="dscr_prod_holder">
+					<span class="prod_line"></span>
+					<p class="dscr_prod">Реализован 2015 год</p>
+				</div>
+				<div class="dscr_prod_holder dscr_prod_holder_clear">
+					<span class="prod_line"></span>
+					<a target="_blank" href="http://somelikeithot.com.ua/" class="prod_ds_link">somelikeithot.com.ua</a>
+				</div>
+				<a href="#" onclick="Show()" class="inform__btn">Связаться с нами</a>
+			</div>
+		</div>
+		<div class="project__block">
+			<div class="block__slider_part">
+				<ul class="slider__list_proj slider__list_proj_count">
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/p1.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/somesl1.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/somesl2.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/somesl4.jpg">
+					</li>
+					<li class="list__pic_proj">
+						<img class="pic__item" src="assets/img/compressed/somesl3.jpg">
+					</li>
+				</ul>
+				<div class="about__pag">
+					<ul class="pag__list"></ul>
+				</div>
+				<p class="project__down"><span class='down__elem'>Вниз<span></p>
+			</div>
+			<div class="block__about_part">
+				<div class="about__creature">
+					<h4 class="creature__title"><span class="numbers">02</span>Брендинг</h4>
+					<h5 class="creature__subTitle">Нейминг</h5>
+					<p class="text__steps_about margin-creature">
+						Здание 30х годов, в котором расположилось заведение, натолкнуло на мысль о сухом законе в Америке. В то время популярными ввиду запрета на алкоголь были так называемые «speak easy» бары, подпольные заведения, в которых спиртные напитки разливали под видом кофе, или чая.
+						</br>
+						</br>
+						Культовым фильмом, который отражает атмосферу тех времён, стал «some like it hot», или «в джазе только девушки».
+						</br>
+						</br>
+						«Some like it hot» — от англ. некоторые любят погорячее, что как нельзя лучше описывает формат coffee&bar и поддерживает концепцию заведения.
+					</p>
+					<h5 class="creature__subTitle">Слоган</h5>
+					<p class="text__steps_about margin-creature">
+						Слоганом проекта была выбрана фраза из фильма «В джазе только девушки» — «drinks 40 degrees and above» (напитки от 40 градусов и выше), подчеркивающая идею заведения, подающего гостям напитки «погорячее».
+					</p>
+					<h5 class="creature__subTitle">Логотип</h5>
+					<p class="text__steps_about margin-creature">
+						Опираясь на главную идею названия «некоторые любят погорячее», мы разработали фирменный знак, слоган и фирменный стиль заведения. Буква «t», как показатель температуры, была выбрана в качестве узнаваемого и современного фирменного знака «Some like it hot». Логотип шрифтовой, создан с добавлением знака градуса Цельсия. Также вместо вертикальной блокировки используется фирменный знак – t в круге с градусом.
+					</p>
+					<h5 class="creature__subTitle">Фирменный стиль</h5>
+					<p class="text__steps_about">
+						Фирменными цветами стали желтый, черный и серый, которые в сочетании друг с другом смотрятся ярко и незаурядно. Также, наша команда разработала элементы фирменного стиля: график работы, визитки, бонусные карты, фирменная упаковка сахара, подставки под чашки, наклейки, бейджи, пакеты, бумажные стаканчики, ценники, меню, фирменный бланк, буклеты, постеры в интерьере. Для многих элементов фирменного стиля использовались фразы из фильма «some like it hot», был разработан фирменный паттерн, геометрические текстуры.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="project__box_page">
+			<div class="box__interior">
+				<h3 class="interior__title">
+					<span class="numbers">03</span>
+					Архитектурный</br>
+					проект
+				</h3>
+				<p class="interior__text">Сoffee & Bar</p>
+				<ul class="interior__list">
+				</ul>
+			</div>
+			<div class="box__pic three_ms_n">
+				<div id="mfpWrap" class="pic__inter">
+					<a class="inter__img" href="assets/img/slih/photo_1_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_1.jpg">
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_2_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_2.jpg">
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_3_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_3.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_4_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_4.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_5_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_5.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_6_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_6.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_7_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_7.jpg" >
+					</a>
+					<a class="inter__img" href="assets/img/slih/photo_8_big.jpg" >
+						<img class="img__dev" src="assets/img/slih/photo_8.jpg" >
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="project__main_img align_flexCreat">
+			<div class="main__img_proj img_bigItem">
+				<img class="img__about" src="assets/img/compressed/some_new.jpg">
+			</div>
+			<p class="text_creature">
+				Заведение находится в здании, которое является памятником архитектуры конструктивизма. Панорамные окна выходят на улицу Сумскую — центральную улицу города. Чтобы максимально раскрыть изначально существующий потенциал места, были выбраны подчеркнуто лаконичные и сдержанные приемы оформления — нейтральный светло-серый цвет бетонного пола, переходящий в тон кирпичных стен, черный «фон» потолка и стен с оконными проемами, светлая деревянная мебель простых форм.
+				</br>
+				</br>
+				«Суперконтраст» по отношению к жестким холодным материалам стен создает подчеркнуто теплая и комфортная мягкая мебель — диваны и стулья с обивкой открытого желтого цвета. В результате желания оставить открытой кладку стен 30-х годов и следы переделок — факты из реальной жизни здания, характер интерьера приобрел индустриальный оттенок.
+				</br>
+				</br>
+				«Родную» для периода постройки здания индустриальную тему поддерживает бетонный пол и дизайн светильников. Единственными «декоративными» элементами являются постеры, разработанные специально для интерьера этой кофейни на основе элементов фирменного стиля.
+			</p>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap">
+		<div class="menu__block">
+			<h4 class="block__head_title fourTitle"><span class="numbers">04</span>Меню</h4>
+		</div>
+	</div>
+	<div class="slider-project">
+		<div class="slider__slick">
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/somemore.jpg">
+			</div>
+  			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/slider1.png">
+			</div>
+			<div class="slick__elem">
+				<img class="elem__img" src="assets/img/compressed/someNEW.jpg">
+			</div>
+		</div>
+	</div>
+	<div class="menu_proj menu_proj_yap menu_proj_yap_ms">
+		<div class="menu__block">
+			<p class="text__steps_about margin-creature creature_ms">
+				В меню «Some like it hot» представлены блюда европейской кухни и авторские вариации традиционных рецептов. Сформирован широкий ассортимент кондитерских изделий. Гостям бара предлагают оригинальные и драйвовые авторские коктейли, позволяющие, в прямом и переносном смысле «повысить градус» тем, кто любит погорячее. Особое место в кофе-баре занимают кофейные напитки.
+
+			</p>
+			<p class="text__steps_about creature_ms">
+				Кофе эксклюзивных сортов варится на профессиональном оборудовании — кофе машине Sanremo Opera – единственной в Украине, олицетворяющей новейшие технологии в мире кофейного искусства. Также, каждые 4-5 месяцев, происходит смена фирменных сортов на самые актуальные в мире. «Some like it hot» по праву претендует на звание лучшей кофейни города.
+
+			</p>
+		</div>
+	</div>
+	<div class="video-block">
+		<div class="video-block__frame">
+			<iframe class="video-block__item" src="https://player.vimeo.com/video/204860781?color=ffffff&title=0&byline=0&portrait=0" frameborder="0" allowfullscreen></iframe>
+			<p class="video-block__dscr">
+				На самом деле услуга <a href="own.html">ресторан под ключ</a> охватывает более широкий спектр этапов работы над заведением, которые мы оказываем, и включает в себя: регистрацию компании и поиск помещения, поиск подрядчиков, субподрядчиков и смежников, подбор и обучение персонала, маркетинг, получение необходимых «разрешительных» документов, а также закрытие прочих вопросов связанных с запуском ресторана непосредственно сам Startup и поддержку Заказчика в течение 1-го месяца, после запуска ресторана.
+			</p>
+		</div>
+		<div class="video-block__text">
+			<h4 class="creature__title itemFive">
+				<span class="numbers">05</span>
+				Видео</br>
+				отзыв	
+			</h4>
+		</div>
+	</div>
+	<div class="menu__footer">
+		<div class="footer__btns">
+			<a href="eatery.html" class="btns__prev">Посмотреть предыдущий проект</a>
+			<a href="yaposhka.html" class="btns__next">Посмотреть следующий проект</a>
+			<a onclick="Show()" class="btns__conn">Связаться с нами</a>
+		</div>
+		<div class="footer__fill"></div>
+	</div>
+	<div class="mob_ver_holder footerAll">
+		<div class="footer_mob">
+			<div class="input-ms">
+				<p class="sbscr_text">
+					Подпишитесь на нашу рассылку
+				</p>
+				<form method="post" class="subscribe-form">
+			      <input type="email" name="email" class="subscribe-input subscribe-input_mod" placeholder="Ваш Email" >
+			      <button type="submit" class="subscribe-submit subscribe-submit_mod"><span><!-- <img class="arr_fd" src="assets/img/compressed/next.svg" alt=""> -->
+			      		Подписаться
+			      </span></button>
+			      <!-- <button type="submit" class="subscribe-submit"><span><img class="arr_fd" src="assets/img/compressed/next.svg" alt=""></span></button> -->
+			    </form>
+			</div>
+			<div class="social_holder_mob">
+				<a class="connect_mobi" onclick="Show()">Связаться с нами</a>
+				<a target="_blank" href="https://www.facebook.com/CanapeAgency/?fref=ts" class="social_mob">Facebook</a>
+				<a target="_blank" href="https://www.instagram.com/canapeagency/" class="social_mob">Instagram</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="modal-connect">
+		<div class="connect-cover">
+			<div class="wrap__connect">
+				<div class="connect__form">
+					<h2 class="form__title">
+						Свяжитесь с нами
+					</h2>
+					<p class="form__dscr">
+						Отправьте сообщение и мы свяжемся с Вами в течении ближайшего времени.
+					</p>
+					<form class="form__main">
+						<input class="main__input" placeholder="Ваше имя"></input>
+						<input class="main__input" placeholder="Ваш email"></input>
+						<textarea class="main__textarea" placeholder="Введите сообщение"></textarea>
+						<div class="btn_ms_hold">
+							
+							<a class="form_briff" href="brif" download>Скачать бриф</a>
+							<button class="form__btn_con">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="connect__about">
+					<p class="about__someword">
+						Напишите нам, если вы задумались
+						об открытии ресторана, у вас возникли 
+						вопросы, пожелания или идеи, либо 
+						вы просто хотите поболтать о последних
+						тенденциях в ресторанном бизнесе,
+						мы всегда рады!
+					</p>
+					<ul class="about__decor">
+						<li class="decor__item decor-black"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+						<li class="decor__item"></li>
+					</ul>
+				</div>
+			</div>
+			<!-- SUCCESS MODAL HERE !!!!!!!!!!!! JUST PUT display: block in css-->
+			<div class="success-modal">
+				<div class="succ__block">
+					<div class="block__close" onclick="HideSuccess()">
+						<div class="close__space">
+							<span class="space__line line_rot_a"></span>
+							<span class="space__line line_rot_b"></span>
+						</div>
+						<p class="close__word">Закрыть</p>
+					</div>
+					<div class="success__block">
+						<p class="block__thx">
+							Спасибо за вашу заявку, наш менеджер свяжется 
+							с вами в течении 15 минут
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- END OF THE SUCCESS MODAL !!!!!!!!!!!!!! -->
+			<div class="block__close" onclick="Hide()">
+				<div class="close__space">
+					<span class="space__line line_rot_a"></span>
+					<span class="space__line line_rot_b"></span>
+				</div>
+				<p class="close__word">Закрыть</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="modal">
+		<div class="close__box_projects" onclick="HideModal()">
+			<div class="cover_close">
+				<span class="close__line_proj rot-prog-a"></span>
+				<span class="close__line_proj rot-prog-b"></span>
+			</div>
+		</div>
+		<div class="modal__header">
+			<h2 class="header__title">Canape</h2>
+			<p class="header__dscr">Ресторанное агентство</p>
+		</div>
+		<div class="modal_more_links">
+		<div id="DropNav" class="ff_hold">
+				<p class="text_for_drop" >Показать услуги</p>
+				<div  class="drop_cont_ff drop_cont_ff_op">
+					<ul class="modal_more_links_ul modal_more_links_ul_ms">
+						<li class="dropdown__link"><a class="special__link" href="own.html">Ресторан «под ключ»</a></li>
+						<li class="dropdown__link"><a class="special__link" href="concept.html">Концепция</a></li>
+						<li class="dropdown__link"><a class="special__link" href="menu.html">Меню</a></li>
+						<li class="dropdown__link"><a class="special__link" href="brand.html">Брендинг</a></li>
+						<li class="dropdown__link"><a class="special__link" href="design.html">Проект</a></li>
+						<li class="dropdown__link"><a class="special__link" href="control.html">Управление</a></li>
+						<li class="dropdown__link"><a class="special__link" href="consulting.html">Консалтинг</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="modal_more_links_ul">
+				<li class="more_link_spacer"><a class="more_link_mod" href="aboutus.html">О нас</a></li>
+				<li><a class="more_link_mod" href="contact.html">Контакты</a></li>
+			</ul>
+			<p class="header__dscr_more_s">Или</p>
+			<p class="header__dscr_more_l">Выберите проект:</p>
+		</div>
+		<div class="modal__content">
+			<div class="content__img" onclick="location.href='project.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a1.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Some like it hot</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='yaposhka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a2.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Япошка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='wokoladka.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a3.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Шоколадка</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='sweeter.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a4.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Sweeter</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='ricco.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/ricco_modal.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Ricco</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='roast.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a6.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">25 Coffee Roasters</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='takecake.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a7.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Take the cake</p>
+				</div>
+			</div>
+			<div class="content__img" onclick="location.href='eatery.html'">
+				<img class="img__proj_canape" src="assets/img/compressed/a8.jpg">
+				<div class="img__plus">
+					<div class="plus__block">
+						<span class="block__line_first"></span>
+						<span class="block__line_second"></span>
+					</div>
+				</div>
+				<div class="img__dscr">
+					<p class="dscr__name">Eatery</p>
+				</div>
+			</div>
+		</div>
+		<div class="modal__more">
+			<div class="more__text">
+				<div id="showP"></div>
+				<div id="hideP"></div>
+				<p class="text__project">Больше проектов</p>
+				<div class="text__block">
+					<span class="block__plus_first"></span>
+					<span class="block__plus_second"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="assets/css/mfp.css">
+	<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/slick.js"></script>
+	<script type="text/javascript" src="assets/js/mfp.js"></script>
+	<script type="text/javascript" src="assets/js/bundle.js"></script>
+</body>
+</html>
